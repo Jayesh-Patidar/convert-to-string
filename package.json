@@ -1,0 +1,45 @@
+{
+  "name": "number-words",
+  "version": "1.0.0",
+  "description": "This library provide you a helper function to convert numbers in words, ordinal numbers and ordinal words.",
+  "keywords": [
+    "to words",
+    "word",
+    "number",
+    "number word converter",
+    "number to words",
+    "number to ordinals",
+    "number to ordinal words",
+    "number to international words",
+    "number to indian words",
+    "change case of words"
+  ],
+  "main": "dist/index.js",
+  "author": {
+    "name": "Jayesh Patidar",
+    "email": "j.patidar1910@gmail.com"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register 'src/tests/**/*.ts'",
+    "start": "rm -rf dist/ && tsc && nodemon ./src/index.ts"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jayesh-Patidar/number-words"
+  },
+  "issues": {
+    "type": "git",
+    "url": "https://github.com/Jayesh-Patidar/number-words/issues"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {}
+}
