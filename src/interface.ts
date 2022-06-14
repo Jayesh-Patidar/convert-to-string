@@ -1,11 +1,11 @@
-export type NumberWordsMapping = {
+export type NumberToStringMapping = {
     number: number;
     word: string;
     ordinal: string;
     ordinalWord: string;
 }
 
-export interface NumberWordsOptions {
+export interface NumberToStringOptions {
     locale?: 'en-IN' | 'en-US';
     toOrdinalWords?: boolean;
     toOrdinal?: boolean;

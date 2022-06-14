@@ -1,6 +1,6 @@
-import { NumberWordsMapping } from "../interface";
+import { NumberToStringMapping } from "../interface";
 
-const numberWordsMapping: NumberWordsMapping[] = [
+const numberToStringMapping: NumberToStringMapping[] = [
   { number: 1000000000, word: "arab", ordinal: '', ordinalWord: 'arab' },
   { number: 10000000, word: "crore", ordinal: '', ordinalWord: 'crore' },
   { number: 100000, word: "lakh", ordinal: '', ordinalWord: 'lakh' },
@@ -36,4 +36,4 @@ const numberWordsMapping: NumberWordsMapping[] = [
   { number: 0, word: "zero", ordinal: 'th', ordinalWord: 'zeroth' },
 ];
 
-export default numberWordsMapping;
+export default numberToStringMapping;

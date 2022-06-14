@@ -1,18 +1,24 @@
 {
-  "name": "number-words",
-  "version": "1.0.0",
-  "description": "This library provide you a helper function to convert numbers in words, ordinal numbers and ordinal words.",
+  "name": "number-to-string",
+  "version": "0.0.0",
+  "description": "This library provide you a helper function to convert numbers in string, ordinal numbers and ordinal string.",
   "keywords": [
     "to words",
     "word",
+    "string",
     "number",
     "number word converter",
     "number to words",
+    "number to string",
     "number to ordinals",
     "number to ordinal words",
+    "number to ordinal string",
     "number to international words",
+    "number to international string",
     "number to indian words",
-    "change case of words"
+    "number to indian string",
+    "change case of words",
+    "change case of string"
   ],
   "main": "dist/index.js",
   "author": {
@@ -26,11 +32,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jayesh-Patidar/number-words"
+    "url": "https://github.com/Jayesh-Patidar/number-to-string"
   },
   "issues": {
     "type": "git",
-    "url": "https://github.com/Jayesh-Patidar/number-words/issues"
+    "url": "https://github.com/Jayesh-Patidar/number-to-string/issues"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
