@@ -1,6 +1,6 @@
-import { NumberToStringMapping } from "../interface";
+import { ConvertToStringMapping } from "../interface";
 
-const numberToStringMapping: NumberToStringMapping[] = [
+const numberToStringMapping: ConvertToStringMapping[] = [
   {
     number: 1000000000,
     word: "billion",
