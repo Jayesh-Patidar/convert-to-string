@@ -1,5 +1,5 @@
 import { changeCase } from "./changeCase";
-import { NumberToStringOptions } from "./interface";
+import { ConvertToStringOptions } from "./interface";
 import * as locales from "./locales";
 
 const MAX_NUMBER = 100000000000;
@@ -61,9 +61,9 @@ const convertToOrdinalWords = (
   return wordsArray.reverse().join(" ");
 };
 
-export const numberToString = (
+export const convertToString = (
   number: number,
-  options?: undefined | NumberToStringOptions
+  options?: undefined | ConvertToStringOptions
 ): string => {
   if (!isNumberInDesiredRange(number)) {
     throw new RangeError(
@@ -104,12 +104,12 @@ export const numberToString = (
         const remainder: number = absoluteNumber % key;
 
         if (remainder > 0) {
-          result += `${numberToString(digit, {
+          result += `${convertToString(digit, {
             locale: options.locale,
-          })} ${word} ${numberToString(remainder, { locale: options.locale })}`;
+          })} ${word} ${convertToString(remainder, { locale: options.locale })}`;
           break;
         } else {
-          result += `${numberToString(digit, {
+          result += `${convertToString(digit, {
             locale: options.locale,
           })} ${word}`;
           break;

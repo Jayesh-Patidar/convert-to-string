@@ -1,4 +1,4 @@
-# Number To String
+# Convert To String
 This library provide you a helper function to convert numbers in string, ordinal numbers and ordinal string. The helper function also provide a basic configuration to change the locale from `en-IN` to `en-US` according to your requirement i.e. you can now change the numbers to words in `Indian` or `International` system. The helper function provide an option to change the case of words between `sentence`, `title`, `upper` and `lower`. Play around with this library and happy coding 😉!!
 
 ## Features
@@ -10,11 +10,11 @@ This library provide you a helper function to convert numbers in string, ordinal
 - Change sentence case easily either to `upper`, `lower`, `title`, `sentence`
 
 ## Installation
-To install the package just run the command `npm install number-to-string` in your terminal.
+To install the package just run the command `npm install convert-to-string` in your terminal.
 
 ## API Reference
 
-### `numberToString(number, options)`
+### `convertToString(number, options)`
 
 The function takes two parameters `number` which is required and should be of number type and `options` which is optional and is of object type. The function returns a string and the output can vary on the basis of different options. The full description of option parameters is given below:
 
@@ -29,32 +29,32 @@ The function takes two parameters `number` which is required and should be of nu
 
 ### 1) Basic Examples
 ```javascript
-const { numberToString } = require("number-to-string");
+const { convertToString } = require("convert-to-string");
 
-numberToString(100); // one hundred
+convertToString(100); // one hundred
 
-numberToString(1067); // one thousand sixty seven
+convertToString(1067); // one thousand sixty seven
 
-numberToString(342578); // three lakh forty two thousand five hundred seventy eight
+convertToString(342578); // three lakh forty two thousand five hundred seventy eight
 ```
 
 ### 2) Configurations
 ```javascript
-const { numberToString } = require("number-to-string");
+const { convertToString } = require("convert-to-string");
 
-numberToString(100, { toOrdinal: true }); // 100th
+convertToString(100, { toOrdinal: true }); // 100th
 
-numberToString(1067, { toOrdinalWords: true }); // one thousand sixty seventh
+convertToString(1067, { toOrdinalWords: true }); // one thousand sixty seventh
 
-numberToString(342578, { locale: 'en-US' }); // three hundred forty two thousand five hundred seventy eight
+convertToString(342578, { locale: 'en-US' }); // three hundred forty two thousand five hundred seventy eight
 
-numberToString(78866782, { locale: 'en-IN' }); // seven crore eighty eight lakh sixty six thousand seven hundred eighty two
+convertToString(78866782, { locale: 'en-IN' }); // seven crore eighty eight lakh sixty six thousand seven hundred eighty two
 
-numberToString(78866782, { locale: 'en-US', toOrdinalWords: true }); // seventy eight million eight hundred sixty six thousand seven hundred eighty second
+convertToString(78866782, { locale: 'en-US', toOrdinalWords: true }); // seventy eight million eight hundred sixty six thousand seven hundred eighty second
 
-numberToString(3234, { changeCaseTo: 'title' }); // Three Thousand Two Hundred Thirty Four
+convertToString(3234, { changeCaseTo: 'title' }); // Three Thousand Two Hundred Thirty Four
 
-numberToString(3234, { changeCaseTo: 'sentence' }); // Three thousand two hundred thirty four
+convertToString(3234, { changeCaseTo: 'sentence' }); // Three thousand two hundred thirty four
 ```
 
 ## Running Tests
@@ -72,7 +72,7 @@ To run tests, run the following command
 ## Contributing
 
 Contributions are always welcome! Open a pull request or add comments on the
-[issues page](https://github.com/Jayesh-Patidar/number-to-string/issues). Thanks!
+[issues page](https://github.com/Jayesh-Patidar/convert-to-string/issues). Thanks!
 
 ## License
 
