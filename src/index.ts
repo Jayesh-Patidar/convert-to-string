@@ -61,7 +61,7 @@ const convertToOrdinalWords = (
   return wordsArray.reverse().join(" ");
 };
 
-export const convertToString = (
+export const numberToString = (
   number: number,
   options?: undefined | ConvertToStringOptions
 ): string => {
@@ -104,12 +104,12 @@ export const convertToString = (
         const remainder: number = absoluteNumber % key;
 
         if (remainder > 0) {
-          result += `${convertToString(digit, {
+          result += `${numberToString(digit, {
             locale: options.locale,
-          })} ${word} ${convertToString(remainder, { locale: options.locale })}`;
+          })} ${word} ${numberToString(remainder, { locale: options.locale })}`;
           break;
         } else {
-          result += `${convertToString(digit, {
+          result += `${numberToString(digit, {
             locale: options.locale,
           })} ${word}`;
           break;

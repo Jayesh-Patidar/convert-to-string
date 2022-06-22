@@ -1,5 +1,5 @@
 {
-  "name": "convert-to-string",
+  "name": "number-to-string",
   "version": "0.0.0",
   "description": "This library provide you a helper function to convert numbers in string, ordinal numbers and ordinal string.",
   "keywords": [
@@ -32,11 +32,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jayesh-Patidar/convert-to-string"
+    "url": "https://github.com/Jayesh-Patidar/number-to-string"
   },
   "bugs": {
     "type": "git",
-    "url": "https://github.com/Jayesh-Patidar/convert-to-string/issues"
+    "url": "https://github.com/Jayesh-Patidar/number-to-string/issues"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
