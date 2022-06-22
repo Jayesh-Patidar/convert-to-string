@@ -1,4 +1,4 @@
-export type ConvertToStringMapping = {
+export type NumberToStringMapping = {
     number: number;
     word: string;
     ordinal: string;
